@@ -21,7 +21,7 @@ public class ProductType implements Serializable {
 
     @Id
     @Column(name = "CODE_PRODUCT_TYPE", length = 20, nullable = false)
-    private String code;
+    private String codeProductType;
     @Column(name = "NAME", length = 100, nullable = false)
     private String name;
     @Column(name = "CLIENT_TYPE", length = 3, nullable = false)
@@ -32,14 +32,14 @@ public class ProductType implements Serializable {
     private String temporalityInterest;
 
     public ProductType(String code) {
-        this.code = code;
+        this.codeProductType = code;
     }
 
     @Override
     public int hashCode() {
         final int prime = 31;
         int result = 1;
-        result = prime * result + ((code == null) ? 0 : code.hashCode());
+        result = prime * result + ((codeProductType == null) ? 0 : codeProductType.hashCode());
         return result;
     }
 
@@ -52,10 +52,10 @@ public class ProductType implements Serializable {
         if (getClass() != obj.getClass())
             return false;
         ProductType other = (ProductType) obj;
-        if (code == null) {
-            if (other.code != null)
+        if (codeProductType == null) {
+            if (other.codeProductType != null)
                 return false;
-        } else if (!code.equals(other.code))
+        } else if (!codeProductType.equals(other.codeProductType))
             return false;
         return true;
     }
