@@ -26,6 +26,4 @@ public class ProductPK implements Serializable {
         this.code = code;
     }
 
-    
-
 }

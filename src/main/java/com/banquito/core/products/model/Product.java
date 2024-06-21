@@ -61,5 +61,4 @@ public class Product implements Serializable {
     @JoinColumn(name = "CODE_SEGMENT", referencedColumnName = "CODE_SEGMENT", insertable = false, updatable = false)
     private Segment segment;
 
-    
 }

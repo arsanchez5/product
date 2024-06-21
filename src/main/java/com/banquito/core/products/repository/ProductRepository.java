@@ -8,5 +8,6 @@ import com.banquito.core.products.model.Product;
 import com.banquito.core.products.model.ProductPK;
 
 public interface ProductRepository extends JpaRepository<Product, ProductPK> {
+
     List<Product> findByName(String name);
 }
