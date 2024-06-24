@@ -53,12 +53,4 @@ public class Product implements Serializable {
     @JoinColumn(name = "CODE_PRODUCT_TYPE", referencedColumnName = "CODE_PRODUCT_TYPE", insertable = false, updatable = false)
     private ProductType productType;
 
-    @OneToMany
-    @JoinColumn(name = "CODE_INTEREST_RATE", referencedColumnName = "CODE_INTEREST_RATE", insertable = false, updatable = false)
-    private InterestRate interestRate;
-
-    @OneToMany
-    @JoinColumn(name = "CODE_SEGMENT", referencedColumnName = "CODE_SEGMENT", insertable = false, updatable = false)
-    private Segment segment;
-
 }
